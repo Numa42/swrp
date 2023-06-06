@@ -1,17 +1,60 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('medias/font/GillSans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('medias/font/GillSansBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body{
     margin: 0;
     color: white;
     background-color: rgb(32, 32, 34);
+    font-family: 'Gill Sans', sans-serif;;
 }
 
 header{
     background-color: rgb(40, 42, 46);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header li{
+    display: flex;
 }
 
 #logo{
-    width: 7%;
+    width: 80px;
+    height: 80px
+}
+
+main{
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 #banner{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+#boutique{
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-gap: 100px;
+}
+
+#boutique img{
     width: 100%;
 }
