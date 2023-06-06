@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    color: white;
+    background-color: rgb(32, 32, 34);
+}
+
+header{
+    background-color: rgb(40, 42, 46);
+}
+
+#logo{
+    width: 7%;
+}
+
+#banner{
+    width: 100%;
+}
