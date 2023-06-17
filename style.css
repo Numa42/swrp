@@ -65,6 +65,47 @@ a:hover{
     height: 150px;
 }
 
+#menu{
+    width: 150px;
+}
+
+#menu_close{
+    z-index: 9999;
+    cursor: pointer;
+    position: fixed;
+    width: 100px;
+    padding-left: 220px;
+}
+
+.nav_bar{
+    list-style-type: none;
+    position: fixed;
+    width: 65vw;
+    margin-top: 0;
+    height: 100vh;
+    top: 0;
+    padding-top: 10rem;
+    right: 0;
+    z-index: 9998;
+    font-size: 2rem;
+    line-height: 2;
+    padding-left: 2rem;
+    background-color: white;
+    opacity: 0;
+    width: 65w;
+    max-width: 0;/* used for animating */
+    transition: all 0.5s ease-in;
+}
+
+.visible{
+  opacity: 1;
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
 main{
     padding-left: 50px;
     padding-right: 50px;
@@ -132,4 +173,22 @@ footer{
 footer p{
     font-size: 1em;
     text-align: center;
+}
+
+@media screen and (max-width: 500px){
+    #menu-pc{
+        display: none;
+    }
+
+    #menu{
+        display: inherit;
+    }
+
+    .nav_bar a{
+        color: black;
+    }
+
+    .nav_bar a:hover{
+            color: white;
+    }
 }

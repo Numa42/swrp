@@ -8,10 +8,11 @@
     <link rel="stylesheet" type="text/css" href="">
   </head>
   <body>
+    <div class="overlay hidden" onclick="toggleStatus()"></div>
     <header>
       <img id="logo" src="medias/images/swrp.png">
       <h1>SWRP</h1>
-      <li>
+      <li id="menu-pc">
         <ul class="button">
           <a target="_blank" id="insta" href="https://www.instagram.com/teamswrp/">Instagram</a>
         </ul>
@@ -19,17 +20,24 @@
           <a target="_blank" id="tiktok" href="https://www.tiktok.com/ZMNLvVLg9">Tiktok</a>
         </ul>
         <ul class="button">
-          <a target="_blank" id="contact" href="mailto:teamswrp@gmail.com">Contacts</a>
+          <a target="_blank" id="contact" href="contact.html">Contacts</a>
         </ul>
       </li>
+      <img id="menu" alt="menu" src="medias/images/menu-icon.png" onclick="toggleStatus()"/>
+      <img id="menu_close" class="hidden" alt="menu-close" src="medias/images/menu-close.png" onclick="toggleStatus()"/>
+      <ul class="nav_bar hidden">
+        <li onclick="toggleStatus()"><a href="https://www.instagram.com/teamswrp/">Instagram</a></li>
+        <li onclick="toggleStatus()"><a href="https://www.tiktok.com/ZMNLvVLg9">Tiktok</a></li>
+        <li onclick="toggleStatus()"><a href="contact.html">Contacts</a></li>
+      </ul>
     </header>
     <main>
       <section id="presntation">
         <img id="banner" src="medias/images/banner.png">
-        <p>Le pénis est l’organe mâle de copulation et de miction chez les animaux. Il constitue, avec les testicules, l’appareil génital externe du mâle. L'organe reproducteur mâle s'appelle également pénis chez d'autres animaux.</p>
+        <p>Salut, nous c’est la TEAM SWRP. On est une équipe de Street Workout du nord de la Drôme. Voici notre site boutique avec ci-dessous nos plus belle création pour soutenir notre association 😉</p>
       </section>
       <h1 id="boutiqueTitle">BOUTIQUE</h1>
-      <p id="dispo">Chaque Sweet est disponibles en S - M - L - XL - XXL</p>
+      <p id="dispo">Chaque Sweat est disponibles en S - M - L - XL - XXL</p>
       <section id="boutique">
         <img id="pull1" src="medias/images/pull1.jpg">
         <section id="pull1" class="pull">
@@ -54,7 +62,9 @@
       </section>
     </main>
     <footer>
+      <p>Aucune plateforme de paiement n'est proposé sur ce site, pour tout achat, se référer à la <a href="contact.html">page contact</a></p>
       <p>Ce site à été créé par <a target="_blank" href="mailto:numaverpillon42@gmail.com">Numa Verpillon</a></p>
     </footer>
   </body>
+  <script src="main.js"></script>
 </html>
