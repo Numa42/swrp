@@ -4,7 +4,6 @@ const nav_bar = document.getElementsByClassName("nav_bar");
 const overlay = document.getElementsByClassName("overlay")[0];
 
 function toggleStatus() {
-  if (window.innerWidth < 778)
     if (overlay.classList.contains("hidden")) {
       overlay.classList.remove("hidden");
       nav_bar[0].classList.remove("hidden");
@@ -13,7 +12,6 @@ function toggleStatus() {
         overlay.classList.add("visible");
       }, 1);
       menu_close.classList.remove("hidden");
-      menu.classList.add("hidden");
     } else {
       overlay.classList.remove("visible");
       nav_bar[0].classList.remove("visible");
@@ -21,7 +19,6 @@ function toggleStatus() {
         overlay.classList.add("hidden");
         nav_bar[0].classList.add("hidden");
       }, 500);
-      menu.classList.remove("hidden");
       menu_close.classList.add("hidden");
     }
 }

@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact SWRP</title>
-</head>
-<body>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact SWRP</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="hovereffect.css">
+        <link rel="stylesheet" type="text/css" href="">
+    </head>
+    <body>
+        <div class="overlay hidden" onclick="toggleStatus()"></div>
+        <header>
+            <a href="index.html"><img id="logo" src="medias/images/swrp.png"></a>
+            <h1>SWRP</h1>
+            <img id="menu" alt="menu" src="medias/images/menu-icon.png" onclick="toggleStatus()"/>
+            <img id="menu_close" class="hidden" alt="menu-close" src="medias/images/menu-close.png" onclick="toggleStatus()"/>
+            <ul class="nav_bar hidden">
+                <li onclick="toggleStatus()"><a href="https://www.instagram.com/teamswrp/" id="insta">Instagram</a></li>
+                <li onclick="toggleStatus()"><a href="https://www.tiktok.com/ZMNLvVLg9" id="tiktok">Tiktok</a></li>
+                <li onclick="toggleStatus()"><a href="contact.html" id="contact">Contacts</a></li>
+            </ul>
+        </header>
+    </body>
+    <script src="main.js"></script>
 </html>

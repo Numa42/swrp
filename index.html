@@ -10,25 +10,14 @@
   <body>
     <div class="overlay hidden" onclick="toggleStatus()"></div>
     <header>
-      <img id="logo" src="medias/images/swrp.png">
+      <a href="index.html" class="logo"><img class="logo" src="medias/images/swrp.png"></a>
       <h1>SWRP</h1>
-      <li id="menu-pc">
-        <ul class="button">
-          <a target="_blank" id="insta" href="https://www.instagram.com/teamswrp/">Instagram</a>
-        </ul>
-        <ul class="button">
-          <a target="_blank" id="tiktok" href="https://www.tiktok.com/ZMNLvVLg9">Tiktok</a>
-        </ul>
-        <ul class="button">
-          <a target="_blank" id="contact" href="contact.html">Contacts</a>
-        </ul>
-      </li>
       <img id="menu" alt="menu" src="medias/images/menu-icon.png" onclick="toggleStatus()"/>
       <img id="menu_close" class="hidden" alt="menu-close" src="medias/images/menu-close.png" onclick="toggleStatus()"/>
       <ul class="nav_bar hidden">
-        <li onclick="toggleStatus()"><a href="https://www.instagram.com/teamswrp/">Instagram</a></li>
-        <li onclick="toggleStatus()"><a href="https://www.tiktok.com/ZMNLvVLg9">Tiktok</a></li>
-        <li onclick="toggleStatus()"><a href="contact.html">Contacts</a></li>
+        <li onclick="toggleStatus()"><a href="https://www.instagram.com/teamswrp/" id="insta">Instagram</a></li>
+        <li onclick="toggleStatus()"><a href="https://www.tiktok.com/ZMNLvVLg9" id="tiktok">Tiktok</a></li>
+        <li onclick="toggleStatus()"><a href="contact.html" id="contact">Contacts</a></li>
       </ul>
     </header>
     <main>
