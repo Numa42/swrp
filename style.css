@@ -144,6 +144,19 @@ h3{
     margin-right: 5px;
 }
 
+.contact-tel{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    height: 50px;
+}
+
+.contact-tel img{
+    margin-right: 5px;
+}
+
 p{
     text-align: center;
     font-size: 2em;
