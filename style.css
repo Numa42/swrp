@@ -107,7 +107,7 @@ main{
     padding-right: 50px;
 }
 
-#banner{
+.banner{
     width: 100%;
 }
 
@@ -124,12 +124,33 @@ h2{
 }
 
 h3{
+    text-align: center;
     font-size: 5em;
     margin: 0;
 }
 
+.contact{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 41%;
+    margin-right: 41%;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    height: 50px;
+}
+
+.contact img{
+    margin-right: 5px;
+}
+
 p{
+    text-align: center;
     font-size: 2em;
+}
+
+.mZero{
+    margin: 0;
 }
 
 #boutiqueTitle{
@@ -158,12 +179,12 @@ p{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 footer{
     background-color: rgb(32, 32, 34);
     margin-top: 25px;
-    border-top: solid;
 }
 
 footer p{
@@ -171,5 +192,43 @@ footer p{
     text-align: center;
 }
 
-@media screen and (max-width: 500px){
+.contact-logo{
+    width: 50px;
+}
+
+@media screen and (max-width: 1250px){
+    .contact{
+        margin-left: 37%;
+        margin-right: 37%;
+    }
+}
+
+@media screen and (max-width: 875px){
+    .contact{
+        margin-left: 31%;
+        margin-right: 31%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .contact{
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .contact{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .contact{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 }
